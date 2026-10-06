@@ -1,6 +1,6 @@
 # fahrenheat-hardware
 
-A hat for the ESP32-C3 SuperMini that adds CAN-FD and 12 V input.
+A hat for the ESP32-C3 SuperMini that adds CAN-FD and 12 V input. [Firmware](https://github.com/jagheterfredrik/fahrenheat) written on Zephyr.
 
 ![PCB render](docs/render.png)
 
@@ -10,4 +10,4 @@ A hat for the ESP32-C3 SuperMini that adds CAN-FD and 12 V input.
 
 ## Ordering
 
-All parts carry LCSC numbers. `python3 export_jlcpcb.py` writes gerbers, BOM and CPL to `jlcpcb/` for JLCPCB assembly. Pushing a `v*` tag builds them in CI and attaches them to a GitHub release.
+All parts carry LCSC numbers. `python3 export_jlcpcb.py` writes gerbers, BOM and CPL to `jlcpcb/` for JLCPCB assembly.
