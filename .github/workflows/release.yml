@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0.6
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Export JLCPCB files
+        run: python3 export_jlcpcb.py
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: jlcpcb/*
+          generate_release_notes: true
