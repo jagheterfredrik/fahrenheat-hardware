@@ -1,0 +1,19 @@
+# EasyEDA import sources
+easyeda-source/
+PCB_PCB_PreHeat-copy_*.kicad_pcb
+
+# KiCad local/user state and backups
+.history/
+*.kicad_prl
+*.bak
+*-backups/
+fp-info-cache
+\#auto_saved_files#
+_autosave-*
+*.lck
+
+# Generated fab outputs (run export_jlcpcb.py)
+jlcpcb/
+
+.DS_Store
+__pycache__/
